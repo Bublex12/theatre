@@ -6,34 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
-    
     <header class="header">
         <div class="header__wrapper">
             <nav class="navbar">
+                <div class="nav">
+                    <a href="#">
+                        <img class="logo-img" src="img/logo.png" alt="">
+                    </a>
+                    <a href="#" class="navbar__a">Преимущества</a>
+                    <a href="#" class="navbar__a">Сравнение</a>
+                    <a href="#" class="navbar__a">Виды пленки</a>
+                    <a href="#" class="navbar__a">Инструкция</a>
+                </div>
 
-               
-       
-                <a href=""><img src="img/Frame.png" alt=""></a>
-
-           
-                   
-              
-
-                <a href="">Главная</a>
-                <a href="">Афиша</a>
-                <a href="">Новости</a>
-                <a href="">О театре</a>
-
-            </nav>
-
-            <div class="header__content">
-
-            </div>
-        </div>
     </header>
     <main>
         <section class="section samples">
@@ -41,83 +31,71 @@
                 <div class="samples__slider">
                     <div class="slider__list">
                     </div>
-                    <button type="button" class="slider__button slider__button--prev">пред</button>
-                    <button type="button" class="slider__button slider__button--next">След</button>
-
+                    <i>
+                        <input checked type="radio" name="s" class="img1" title="Казанский театр юного зрителя">
+                        <input type="radio" name="s" class="img2" title="Random Picture 2">
+                        <input type="radio" name="s" class="img3" title="Random Picture 3">
+                        <input type="radio" name="s" class="img4" title="Random Picture 4">
+                        <input type="radio" name="s" class="img5" title="Random Picture 5">
+                    </i>
                 </div>
             </div>
         </section>
         <section class="section info">
             <div class="info">
-
+                
+                <table class="table">
+                    <tr>
+                        <th class="th">Дата основания</th>
+                        <th class="th">2020-2021 год</th>
+                        <th class="th">Абсолютно для всех</th>
+                    </tr>
+                    <tr>
+                        <td class="td">1932</td>
+                        <td class="td">34 спектакля</td>
+                        <td class="td">0+</td>
+                    </tr>
+                   
+                </table>
+                
             </div>
 
         </section>
-      
+
         <section class="section poster">
-              <div class="poster__name">
-            <h2>Ближайшие премьеры</h2>
-            <div class="poster">
+            <div class="poster__name">
+                <h2>Ближайшие премьеры</h2>
+                <div class="poster__wrapper">
 
 
+                    <div class="poster">
+                        <div class="poster__item">
+                            <a href="play1.html"><img src="img/c1.png" class="img-poster" alt=""></a>
 
-                <div class="poster__item">
-                    <img src="img/c1.png" alt="">  
-                <a href="play1.html">Подробнее...</a>
+                        </div>
+
+                        <div class="poster__item">
+                            <a href="play2.html"><img src="img/c2.png" class="img-poster" alt=""></a>
+
+                        </div>
+
+                        <div class="poster__item">
+                            <a href="play3.html"><img src="img/c3.png" class="img-poster" alt=""></a>
+
+                        </div>
+
+                        <div class="poster__item">
+                            <a href="play4.html"><img src="img/c4.png" class="img-poster" alt=""></a>
+                        </div>
+
+                    </div>
                 </div>
 
-              
-
-
-                <div class="poster__item">
-                    <img src="img/c2.png" alt="">
-                    <a href="play2.html">Подробнее...</a>
-                </div>
-
-
-                <div class="poster__item">
-                    <img src="img/c3.png" class="img-poster" alt="">
-                    <a href="play3.html">Подробнее...</a>
-                </div>
-
-                <div class="poster__item">
-                    <img src="img/c4.png" alt="">
-                    <a href="play4.html">Подробнее...</a>
-                </div>
-
-              <!--
-    
-                <div class="poster__item">
-                    <img src="img/c5.png" alt="">  
-                </div>
-
-              
-
-
-                <div class="poster__item">
-                    <img src="img/c6.png" alt="">
-                </div>
-
-
-                <div class="poster__item">
-                    <img src="img/c7.png" alt="">
-                </div>
-
-                <div class="poster__item">
-                    <img src="img/c8.png" alt="">
-                </div>
-
-
-            </div>
-        </div>
-                          -->
-                
-            
 
         </section>
         <section class="section 4btn">
             <div class="fourbtn">
-                a<button class="fourbtn__item"><a href="">Правила поведения</a></button>
+                <button class="fourbtn__item">Правила поведения</button>
                 <button class="fourbtn__item">Панорама зала</button>
                 <button class="fourbtn__item">История театра</button>
                 <button class="fourbtn__item">Коллектив театра</button>
