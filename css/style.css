@@ -36,8 +36,28 @@ a:hover{
 .navbar a{
     text-decoration: none;
     margin-left: 40px;
-    
+    color: black;
 }
+
+.navbar a:hover{
+    color: red;
+    transition:0.5s;
+}
+.navbar a::after{
+    background-color: #f66d52; 
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    -webkit-transition: .3s ease-in-out;
+    -moz--transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.navbar a:hover:after,
+.navbar a:focus:after {
+    width: 100%;
+}
+
 .logo-img{
     height: 55px;
     width: 55px;
@@ -174,8 +194,59 @@ h2{
     
 }
 .news{
+    color: black;
     height: 836px;
-    background-color: grey;
+    background-color:white;
+}
+
+.news a{
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+
+.news a:hover{
+    color: red;
+    transition: 0.5s;
+}
+
+.news h2{
+  text-align:left;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-top: 20px;
+  font-size: 40px;
+}
+
+.news h3{
+  text-align: right;
+  margin: 0 auto;
+  padding-right: 100px;
+}
+
+.news__wrapper{
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    flex-wrap: wrap;
+}
+
+.news__item{
+    box-sizing: border-box;
+    width: 581px;
+    height: 330px;
+    margin: 20px;
+}
+
+.news__item h3{
+    text-align: left;
+    padding-top: 10px;
+}
+
+.news__item p{
+    padding-top: 20px;
+    color: grey;
+    opacity: 0.9;
 }
 
 /* Slider */
