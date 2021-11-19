@@ -123,9 +123,19 @@ a:hover{
     font-weight: lighter;
     font-size: 18px;
 }
+.table .th1{
+    padding-left: 50px;
+    color: black;
+    font-weight: lighter;
+    font-size: 36px;
+}
 .table .td{
     padding-left: 50px;
     font-size: 36px;
+}
+.table .td1{
+    padding-left: 50px;
+    font-size: 20px;
 }
 .poster__wrapper{
     
@@ -367,4 +377,27 @@ input:checked + input ~ input:before {
 .img5   {
     background-image: url(https://trikky.ru/wp-content/blogs.dir/1/files/2021/05/11/scale-1200.jpg);
 }
+
+.img_play1{
+    width: 100%;
+}
+.bay_ticket{
+    margin-left: 950px;
+    background: red; 
+    color: #fff; 
+    padding: 15px; 
+    border-radius: 25px; 
+}
+.text_block{
+    padding: 30px 40px 40px 40px;
+    font-size: 16px;
+}
+ul.hr {
+    margin-left: 550px;    
+    font-size: 20px;
+   }
+   ul.hr li {
+    display: inline; 
+    margin-right: 450px; 
+   }
 /* Slider */
