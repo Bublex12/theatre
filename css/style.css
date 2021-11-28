@@ -5,6 +5,7 @@
 
 body{
     margin:0;
+    max-width: 1520px;
 }
 a:hover{
     color: red;
@@ -32,7 +33,9 @@ a:hover{
     
 }
    
-
+.img_play1{
+    width: 100%;
+}
 .navbar a{
     text-decoration: none;
     margin-left: 40px;
@@ -70,46 +73,43 @@ a:hover{
 }
 
 
-.section__wrapper{
-    height: 529px;
+@media (max-width:768px){
+    .slider__wrapper{
+        display: none;
+    }
+    .slider__button{
+        display: none;
+    }
+    .slider__list{
+        display: none;
+    }
+    .header{
+        min-height: 90px;
+    }
+}
+
+.slider__list{
+    height: 530px;
     margin: 0 auto;
     position: relative;
     text-align: center;
-     
-   
-}
-.slider__button{
-    width: 45px;
-    height: 45px;
-    font-size: 12px;
-    text-align: center;
-    border-radius: 25px;
-    background-color: #fff ;
-    color: black;
-    cursor: pointer;
-    border: none;   
+    background: url('../img/pic4.avif   ') no-repeat center;
+    
 }
 
+
 .slider__button--prev{
-    margin-top: 432px;
-    margin-left: 1130px;
+    margin-top: 460px;
+    margin-left: 1450px;
 }
-.slider__button--next{
-    margin-top: 432px;
-    margin-left: 10px;
-    margin-right: 50px;
+
+.section_info{
+    padding-top: 20px ;
+    flex-wrap: wrap;
 }
-.info{
-    
-    
-    height: 100%;
-    text-align: start;
-}
-.ainfo{
-    text-align: end;
-    margin-right: 50px;
-    
-   
+
+.section_info2{
+    flex-wrap: wrap;
 }
 .table{
    
@@ -117,23 +117,25 @@ a:hover{
     margin-bottom: 94px;
      
 }
-.table .th{
+.th{
     padding-left: 50px;
     color: gray;
     font-weight: lighter;
     font-size: 18px;
+    display: inline-block;
 }
-.table .th1{
+.th1{
     padding-left: 50px;
     color: black;
     font-weight: lighter;
     font-size: 36px;
 }
-.table .td{
+.td{
     padding-left: 50px;
     font-size: 36px;
+    display: inline-block;
 }
-.table .td1{
+.td1{
     padding-left: 50px;
     font-size: 20px;
 }
@@ -183,15 +185,11 @@ a:hover{
 
 .fourbtn{
     background-color: #FA434B;
-    border: 1px solid black;
+   
     height: 105px;
     text-align: center;
 }
-h2{
-    margin: 0px;
-    font-size: 42;
-    
-}
+
 .fourbtn__item{
     border-radius: 22.5px;
     background-color:#FA434B ;
@@ -225,7 +223,7 @@ h2{
   margin: 0 auto;
   padding-left: 50px;
   padding-top: 20px;
-  font-size: 40px;
+  
 }
 
 .news h3{
@@ -259,145 +257,148 @@ h2{
     opacity: 0.9;
 }
 
-/* Slider */
-i {
-	position: relative;
-	display: block;
-	width: 100%;
-	height: 528px;
-	overflow: hidden;
-	border-radius: 5px;
+li{
+    list-style-type: none
+}
+
+@media (max-width:768px){
     
-}
-
-i:before, i:after {
-	content: '⥪';
-	position: absolute;
-	top: 50%;
-	left: 1rem;
-	z-index: 2;
-	width: 2rem;
-	height: 2rem;
-	background: rgb(255, 255, 255);
-	color: rgb(0, 0, 0);
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	pointer-events: none;
-}
-
-i:after {
-	content: '⥭';
-	left: auto;
-	right: 1rem;
-}
 
 
-input {
-	appearance: none;
-	-ms-appearance: none;
-	-webkit-appearance: none;
-	display: block;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	border-radius: 5px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	transform: translateX(100%);
-	transition: transform ease-in-out 400ms;
-	z-index: 1;
-    margin-left: 0;
-}
-
-input:focus {
-	outline: none;
-}
-
-input:after {
-	content: attr(title);
-	position: absolute;
-	bottom: 1rem;
-	left: 1rem;
-	width: 580px;
-	color: white;
-	padding: .5rem;
-	font-size: 4rem;
-	border-radius: 5px;
-}
-
-input:not(checked):before {
-	content: '';
-	position: absolute;
-	width: 2rem;
-	height: 2rem;
-	border-radius: 50%;
-	top: 50%;
-	left: calc(-100% + 1rem);
-}
-
-input:checked:before {
-	display: none;
-	left: 1rem;
-}
-
-input:checked {
-	transform: translateX(0);
-	
-	z-index: 0;
-	box-shadow: -5px 10px 20px -15px rgba(0,0,0,1);
-}
-
-input:checked + input:before {
-	left: -3rem;
-}
-
-input:checked + input ~ input:before {
-	display: none;
-}
-
-.img1{
-    background-image: url(https://trikky.ru/wp-content/blogs.dir/1/files/2021/05/11/scale-1200.jpg);
+    .nav-bar {
+        position: absolute;
+        background-color: #FA434B;
+        top: 0;
+        right: 100%;
+        height: 100vh;
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: position 2.9s;
+        -webkit-transition: position 2.9s;
+        -moz-transition: position 2.9s;
+        -ms-transition: position 2.9s;
+        -o-transition: position 2.9s;
+        z-index: 2;
+    }
     
+    .toggle {
+        left: 0;
+        box-shadow: 1px 0 15px 2px #FA434B;
+        z-index: 2;
+    }
+    
+    .toggle-menu {
+        background-color: rgba(0, 0, 0, 0.2);
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 2px 2px 2px 3px;
+        border-radius: 5px;
+        cursor: pointer;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        z-index: 2;
+    }
+    
+    .line {
+        width: 100%;
+        height: 3px;
+        border-radius: 5px;
+        background-color: #fff;
+        transition: transform 0.2s ease-out;
+        -webkit-transition: transform 0.2s ease-out;
+        -moz-transition: transform 0.2s ease-out;
+        -ms-transition: transform 0.2s ease-out;
+        -o-transition: transform 0.2s ease-out;
+        z-index: 2;
+    }
+    
+    .toggle .line1 {
+        background-color: #000000;
+        transform: scale(0.9) rotateZ(-45deg) translate(-6px, 4px);
+        z-index: 2;
+    }
+    
+    .toggle .line2 {
+        display: none;
+        z-index: 2;
+    }
+    
+    .toggle .line3 {
+        background-color: #000000;
+        transform: scale(0.9) rotateZ(45deg) translate(-6px, -4px);
+        z-index: 2;
+    }
+    
+    .toggle .toggle-menu {
+        background-color: white;
+        z-index: 2;
+    }
+    
+    .nav-list {
+        list-style: none;
+        z-index: 2;
+    }
+    
+    .nav-list-item {
+        text-align: center;
+        padding: 10px 0;
+        z-index: 2;
+    }
+    
+    .nav-link {
+        color: #fff;
+        font-size: 22px;
+        text-decoration: none;
+        position: relative;
+        padding-bottom: 4px;
+        z-index: 2;
+    }
+    
+    .nav-link::before {
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+        transform: scaleX(0);
+        transition: transform 0.4s ease-in-out;
+        transform-origin: left;
+        -webkit-transition: transform 0.4s ease-in-out;
+        -moz-transition: transform 0.4s ease-in-out;
+        -ms-transition: transform 0.4s ease-in-out;
+        -o-transition: transform 0.4s ease-in-out;
+        z-index: 2;
+    }
+    
+    .nav-link:hover::before {
+        transform: scaleX(1);
+        z-index: 2;
+    }
 }
-
-.img2{
-    background-image: url(https://trikky.ru/wp-content/blogs.dir/1/files/2021/05/11/scale-1200.jpg);
+@media (max-width:768px)
+{
+    .header{
+        display: none;
+    }
 }
-.img3{
-    background-image: url(https://trikky.ru/wp-content/blogs.dir/1/files/2021/05/11/scale-1200.jpg);
-}
-.img4{
-    background-image: url(https://trikky.ru/wp-content/blogs.dir/1/files/2021/05/11/scale-1200.jpg);
-}
-.img5   {
-    background-image: url(https://trikky.ru/wp-content/blogs.dir/1/files/2021/05/11/scale-1200.jpg);
-}
-
-.img_play1{
-    width: 100%;
-}
-.bay_ticket{
-    margin-left: 950px;
-    background: red; 
-    color: #fff; 
-    padding: 15px; 
-    border-radius: 25px; 
+@media (min-width:768px)
+{
+    .burger{
+        display: none;
+    }
 }
 .text_block{
-    padding: 30px 40px 40px 40px;
-    font-size: 16px;
+    padding: 50px;
 }
-ul.hr {
-    margin-left: 550px;    
-    font-size: 20px;
-   }
-   ul.hr li {
-    display: inline; 
-    margin-right: 450px; 
-   }
-/* Slider */

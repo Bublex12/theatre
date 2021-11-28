@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <script defer src="js/slider.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
@@ -14,50 +15,70 @@
     <header class="header">
         <div class="header__wrapper">
             <nav class="navbar">
-                <div class="nav">
-                    <a href="#">
-                        <img class="logo-img" src="img/logo.png" alt="">
-                    </a>
-                    <a href="#" class="navbar__a">Преимущества</a>
-                    <a href="#" class="navbar__a">Сравнение</a>
-                    <a href="#" class="navbar__a">Виды пленки</a>
-                    <a href="#" class="navbar__a">Инструкция</a>
-                </div>
+                <ul class="nav">
+                    <li>
+                        <a href="#">
+                            <img class="logo-img" src="img/logo.avif" alt="">
+                        </a>
+                    </li>
+                    <li><a href="#" class="navbar__a">Главная</a></li>
+                    <li><a href="#" class="navbar__a">Афиша</a></li>
+                    <li><a href="#" class="navbar__a">Новости</a></li>
+                    <li><a href="#" class="navbar__a">О театре</a></li>
+                </ul>
+            </nav>
 
+        </div>
     </header>
-    <main>        
+
+    <div class="burger">
+        <nav class="header__nav nav-bar">
+            <div class="toggle-menu">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="" class="nav-link">Главная</a></li>
+                <li class="nav-list-item"><a href="" class="nav-link">Афиша</a></li>
+                <li class="nav-list-item">
+                    <a href="" class="nav-link">Новости</a>
+                </li>
+                <li class="nav-list-item"><a href="" class="nav-link">О театре</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
         <section class="section samples">
             <div class="section__wrapper">
                 <div class="samples__slider">
                     <div class="slider__list">
+                        <button type="button" class="slider__button slider__button--prev">
+                            <img src="img/prev.png" alt="">
+                        </button>
+
+                        <button type="button" class="slider__button slider__button--next">
+                            <img src="img/next.png" alt="">
+                        </button>
                     </div>
-                    <i>
-                        <input checked type="radio" name="s" class="img1" title="Казанский театр юного зрителя">
-                        <input type="radio" name="s" class="img2" title="Random Picture 2">
-                        <input type="radio" name="s" class="img3" title="Random Picture 3">
-                        <input type="radio" name="s" class="img4" title="Random Picture 4">
-                        <input type="radio" name="s" class="img5" title="Random Picture 5">
-                    </i>
                 </div>
             </div>
         </section>
-        <section class="section info">
+        
+        <section class="section_info">
             <div class="info">
-                
-                <table class="table">
-                    <tr>
-                        <th class="th">Дата основания</th>
-                        <th class="th">2020-2021 год</th>
-                        <th class="th">Абсолютно для всех</th>
-                    </tr>
-                    <tr>
-                        <td class="td">1932</td>
-                        <td class="td">34 спектакля</td>
-                        <td class="td">0+</td>
-                    </tr>
-                   
-                </table>
-                
+
+                <div class="th">Дата основания</div>
+                <div class="th">2020-2021 год</div>
+                <div class="th">Абсолютно для всех</div>
+                <section class="section_info2">
+                    <div class="td">1932</div>
+                    <div class="td">34 спектакля</div>
+                    <div class="td">0+</div>
+                </section>
+
+
             </div>
 
         </section>
@@ -70,23 +91,25 @@
 
                     <div class="poster">
                         <div class="poster__item">
-                            <a href="play1.html"><img src="img/c1.png" class="img-poster" alt=""></a>
+                            <a href="play1.html"><img src="img/c1.avif" class="img-poster" alt=""></a>
 
                         </div>
 
                         <div class="poster__item">
-                            <a href="play2.html"><img src="img/c2.png" class="img-poster" alt=""></a>
+                            <a href="play2.html"><img src="img/c2.avif" class="img-poster" alt=""></a>
 
                         </div>
 
                         <div class="poster__item">
-                            <a href="play3.html"><img src="img/c3.png" class="img-poster" alt=""></a>
+                            <a href="play3.html"><img src="img/c3.avif" class="img-poster" alt=""></a>
 
                         </div>
 
                         <div class="poster__item">
-                            <a href="play4.html"><img src="img/c4.png" class="img-poster" alt=""></a>
+                            <a href="play4.html"><img src="img/c4.avif" class="img-poster" alt=""></a>
                         </div>
+                      
+                       
 
                     </div>
                 </div>
@@ -105,35 +128,65 @@
         <section class="section news">
             <div class="news">
                 <h2>Новости театра</h2>
-                  <h3><a href="">Показать всё -></a> </h3> 
+                <h3><a href="">Показать всё -></a> </h3>
                 <div class="news__wrapper">
                     <div class="news__item">
-                    <img src="img/picture1.png" alt="">
-                    <h3>24 мая - благотворительный показ спектакля "Иваново детство"</h3>
-                    <p>24 мая пройдет благотворительный показ спектакля “Иваново детство”. Все средства от реализации билетов будут семьям погибших в казанской гимназии №175</p>
+                        <img src="img/picture1.avif" alt="">
+                        <h3>24 мая - благотворительный показ спектакля "Иваново детство"</h3>
+                        <p>24 мая пройдет благотворительный показ спектакля “Иваново детство”. Все средства от
+                            реализации билетов будут семьям погибших в казанской гимназии №175</p>
                     </div>
                     <div class="news__item">
-                    <img src="img/picture2.jpg" alt="">
-                    <h3>"Маленький принц" с сурдопереводом и тифлокомментированиаем</h3>
-                    <p>29 мая в 18:00 пройдет очередной показ в рамках проекта "Театр без границ" Казанского ТЮЗа и фонда "День добрых дел". Тифлокомментированием и сурдопереводом будет оснащен "Маленький принц" - трогательная и мудрая история о дружбе и взрослении.</p>
+                        <img src="img/picture2.avif" alt="">
+                        <h3>"Маленький принц" с сурдопереводом и тифлокомментированиаем</h3>
+                        <p>29 мая в 18:00 пройдет очередной показ в рамках проекта "Театр без границ" Казанского ТЮЗа и
+                            фонда "День добрых дел". Тифлокомментированием и сурдопереводом будет оснащен "Маленький
+                            принц" - трогательная и мудрая история о дружбе и взрослении.</p>
                     </div>
                     <div class="news__item">
-                    <img src="img/picture3.jpg" alt="">
-                    <h3>Вячеслав Казанцев - народный артист РТ!</h3>
-                    <p>Президент РТ Рустам Минниханов присвоил ему звание в Казанском Кремле
-                    Сегодня Президент Республики Татарстан Рустам Минниханов вручил государственные награды Российской Федерации и Республики Татарстан.</p>
+                        <img src="img/picture3.avif" alt="">
+                        <h3>Вячеслав Казанцев - народный артист РТ!</h3>
+                        <p>Президент РТ Рустам Минниханов присвоил ему звание в Казанском Кремле
+                            Сегодня Президент Республики Татарстан Рустам Минниханов вручил государственные награды
+                            Российской Федерации и Республики Татарстан.</p>
                     </div>
                     <div class="news__item">
-                    <img src="img/picture4.jpg" alt="">
-                    <h3>Радион Букаев представит свой первый спекталь в Казанском ТЮЗе</h3>
-                    <p>Им станет постановка о 1970-1980 годах театра, приуроченная к 90-летнему юбилею ТЮЗа
-                        26 марта в 18:30 в Казанском ТЮЗе пройдет премьера спектакля-пасьянса "Первый тайм". Его постановщиком выступил Радион Букаев, который с 2020 года является главным режиссером театра. </p>
+                        <img src="img/picture4.avif" alt="">
+                        <h3>Радион Букаев представит свой первый спекталь в Казанском ТЮЗе</h3>
+                        <p>Им станет постановка о 1970-1980 годах театра, приуроченная к 90-летнему юбилею ТЮЗа
+                            26 марта в 18:30 в Казанском ТЮЗе пройдет премьера спектакля-пасьянса "Первый тайм". Его
+                            постановщиком выступил Радион Букаев, который с 2020 года является главным режиссером
+                            театра. </p>
+                    </div>
+                    <div class="news__item">
+                        <img src="img/picture4.avif" alt="">
+                        <h3>Радион Букаев представит свой первый спекталь в Казанском ТЮЗе</h3>
+                        <p>Им станет постановка о 1970-1980 годах театра, приуроченная к 90-летнему юбилею ТЮЗа
+                            26 марта в 18:30 в Казанском ТЮЗе пройдет премьера спектакля-пасьянса "Первый тайм". Его
+                            постановщиком выступил Радион Букаев, который с 2020 года является главным режиссером
+                            театра. </p>
+                    </div>
+                    <div class="news__item">
+                        <img src="img/picture4.avif" alt="">
+                        <h3>Радион Букаев представит свой первый спекталь в Казанском ТЮЗе</h3>
+                        <p>Им станет постановка о 1970-1980 годах театра, приуроченная к 90-летнему юбилею ТЮЗа
+                            26 марта в 18:30 в Казанском ТЮЗе пройдет премьера спектакля-пасьянса "Первый тайм". Его
+                            постановщиком выступил Радион Букаев, который с 2020 года является главным режиссером
+                            театра. </p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <script>
+            var toggleButton = document.querySelector('.toggle-menu');
+            var navBar = document.querySelector('.nav-bar');
+            toggleButton.addEventListener('click', function () {
+                navBar.classList.toggle('toggle');
+            });
+        </script>
+    </footer>
 </body>
 
 </html>
