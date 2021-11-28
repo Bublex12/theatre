@@ -3,9 +3,9 @@
     font-family: 'Oswald', sans-serif;
 }
 
-body{
-    margin:0;
-    max-width: 1520px;
+
+.wrapper{
+    max-width: 1530px;
 }
 a:hover{
     color: red;
@@ -100,7 +100,7 @@ a:hover{
 
 .slider__button--prev{
     margin-top: 460px;
-    margin-left: 1450px;
+    margin-left: 1420px;
 }
 
 .section_info{
