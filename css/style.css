@@ -5,7 +5,9 @@
 
 
 .wrapper{
-    max-width: 1530px;
+    max-width: 1980px;
+    margin: 0 auto;
+    
 }
 a:hover{
     color: red;
@@ -168,9 +170,10 @@ a:hover{
    
 }
 .poster__name {
-    
+    flex-wrap: wrap;
     margin: 0 auto;
     width: 100%;
+    
     
 }
 .poster__name h2 {
@@ -242,7 +245,7 @@ a:hover{
 .news__item{
     box-sizing: border-box;
     width: 581px;
-    height: 330px;
+   
     margin: 20px;
 }
 
@@ -319,7 +322,7 @@ li{
         -moz-transition: transform 0.2s ease-out;
         -ms-transition: transform 0.2s ease-out;
         -o-transition: transform 0.2s ease-out;
-        z-index: 2;
+        z-index: 20;
     }
     
     .toggle .line1 {
