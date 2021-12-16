@@ -47,6 +47,7 @@ a:hover{
 .navbar a:hover{
     color: red;
     transition:0.5s;
+    
 }
 .navbar a::after{
     background-color: #f66d52; 
@@ -60,7 +61,8 @@ a:hover{
 }
 .navbar a:hover:after,
 .navbar a:focus:after {
-    width: 100%;
+    float: right;
+    width: 50%;
 }
 
 .logo-img{
@@ -108,6 +110,102 @@ a:hover{
 .section_info{
     padding-top: 20px ;
     flex-wrap: wrap;
+}
+
+.purchase_ticket{
+    float: right;
+    margin-top: 10px;
+    margin-right: 40px;
+    background: #FA434B;
+    border: 2px solid #FA434B;
+    box-sizing: border-box;
+    border-radius: 22.5px; 
+    font-size: 25px;
+    color: white;
+    padding: 15px;
+    width: 220px;
+    text-decoration: none;
+}
+
+.select_ticket{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item_left{
+    font-size: 40px;
+    margin-left: 50px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.item_right{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    color:  #FFFFFF;
+}
+.block_item_right{
+    width: 302px;
+    background-color:#FA434B;
+}
+
+.choose_date{
+    margin-left: 50px;
+    font-size: 28px;
+    font-style: normal;
+}
+
+.choose_date_info{
+    width: 560px;
+    font-style: normal;
+font-weight: normal;
+}
+
+.purchase_btn{
+    background: #FA434B;
+    border: 2px solid #FA434B;
+    box-sizing: border-box;
+    border-radius: 22.5px;
+    width: 260px;
+    font-size: 32px;
+    margin-right: 20px;
+    color: white;
+    height: 65px;
+}
+
+.cancel_btn{
+    background: #C4C4C4;
+    border-radius: 22.5px;
+    font-size: 32px;
+    width: 200px;
+    border: 2px solid #C4C4C4;
+    height: 65px;
+}
+
+.form_radio_btn{
+    display: inline-block;
+	margin-right: 10px;
+    width: 220px;
+}
+
+.form_radio_btn input {
+	display: none;
+}
+
+.form_radio_btn label {
+	display: inline-block;	
+	padding: 15px;
+	user-select: none;
+    border: 2px solid #FA434B;
+    box-sizing: border-box;
+    border-radius: 22.5px;
+}
+
+.form_radio_btn input:checked + label {
+	background:#FA434B;
+    color: white;
 }
 
 .section_info2{
