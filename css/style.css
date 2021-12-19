@@ -4,6 +4,7 @@
 }
 
 
+
 .wrapper{
     max-width: 1980px;
     margin: 0 auto;
@@ -39,8 +40,9 @@ a:hover{
     width: 100%;
 }
 .navbar a{
+    
     text-decoration: none;
-    margin-left: 40px;
+    padding-left: 40px;
     color: black;
 }
 
@@ -55,9 +57,8 @@ a:hover{
     content: "";
     height: 2px;
     width: 0%;
-    -webkit-transition: .3s ease-in-out;
-    -moz--transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
+   
+   
 }
 .navbar a:hover:after,
 .navbar a:focus:after {
@@ -97,14 +98,20 @@ a:hover{
     margin: 0 auto;
     position: relative;
     text-align: center;
-    background: url('../img/pic4.avif   ') no-repeat center;
+    background: url('../img/danet.jpg   ') no-repeat center;
     
 }
 
 
 .slider__button--prev{
+    background: none;
+    border: none;
     margin-top: 460px;
-    margin-left: 1420px;
+    margin-left: 1350px;
+}
+.slider__button--next{
+    background: none;
+    border: none;
 }
 
 .section_info{
@@ -265,8 +272,8 @@ font-weight: normal;
     width: 335px;
     height: 450px;
     
-   
 }
+
 .poster__name {
     flex-wrap: wrap;
     margin: 0 auto;
@@ -503,3 +510,48 @@ li{
 .text_block{
     padding: 50px;
 }
+.picture_text1
+{
+  position: absolute;
+  color: white;
+  margin-top: 380px;
+  font-size: 35px;
+  margin-left: 15px;
+}
+.picture_text2
+{
+  position: absolute;
+  color: white;
+  margin-top: 20px;
+  margin-left: 15px;
+
+  background: #FA434B;
+  border: 2px solid #FA434B;
+  box-sizing: border-box;
+  border-radius: 30px; 
+  padding: 4px;
+  width: 120px;
+}
+.picture_text3
+{
+  position: absolute;
+  color: rgb(0, 0, 0);
+  margin-top: 20px;
+  margin-left: 160px;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 30px; 
+  padding: 4px;
+  width: 90px;
+}
+
+
+
+
+
+
+
+
+
+

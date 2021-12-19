@@ -1,12 +1,12 @@
 let items = [
     {
-        path: "img/pic3.avif",
+        path: "img/danet.jpg",
     },
     {
-        path: "img/pic1.avif",
+        path: "img/netda.jpg",
     },
     {
-        path: "img/pic2.avif",
+        path: "img/netnet.jpg",
     }
 
 ];
@@ -47,3 +47,4 @@ function prevSlide () {
 btnPrev.addEventListener("click", prevSlide);
 
 btnNext.addEventListener("click", changeSlide);
+
