@@ -4,7 +4,6 @@
 }
 
 
-
 .wrapper{
     max-width: 1980px;
     margin: 0 auto;
@@ -98,7 +97,7 @@ a:hover{
     margin: 0 auto;
     position: relative;
     text-align: center;
-    background: url('../img/danet.jpg   ') no-repeat center;
+    background: url('../img/1.jpg') no-repeat center;
     
 }
 
@@ -246,33 +245,35 @@ font-weight: normal;
     padding-left: 50px;
     font-size: 20px;
 }
+
+.section_poster{
+
+}
+
 .poster__wrapper{
     
     margin-left: 25px;
     margin-top: 40px;
     margin-bottom: 40px;
-    
-    
-  
+
 }
 .poster{
-    flex-wrap: nowrap;
-    
+    flex-wrap: wrap;
     display: flex;
     
 }
 .poster__item{
     flex-wrap: wrap;
-    align-items: center;
     flex-direction: column;
     box-shadow: 2px 0px 30px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin-left: 25px;
+    margin-top: 15px;
     text-align: center;
     width: 335px;
     height: 450px;
-    
 }
+
 
 .poster__name {
     flex-wrap: wrap;
@@ -285,18 +286,20 @@ font-weight: normal;
     padding-left: 50px;
     
 }
+
 .img-poster{
     height: 100%;
     width: 335px;
     border-radius: 10px;
 }
 
+
 .fourbtn{
-    background-color: #FA434B;
-   
-    height: 105px;
-    text-align: center;
+    background-color: #FA434B;  
+    text-align: center; 
 }
+
+
 
 .fourbtn__item{
     border-radius: 22.5px;
@@ -306,6 +309,7 @@ font-weight: normal;
     border:1px solid white;
     margin-left: 20px;
     margin-top: 30px; 
+    margin-bottom: 30px;
     height: 45px;
     
 }

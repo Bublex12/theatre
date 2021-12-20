@@ -1,12 +1,12 @@
 let items = [
     {
-        path: "img/danet.jpg",
+        path: "img/1.jpg",
     },
     {
-        path: "img/netda.jpg",
-    },
+        path: "img/2.jpg",
+    },           
     {
-        path: "img/netnet.jpg",
+        path: "img/3.jpg",
     }
 
 ];
